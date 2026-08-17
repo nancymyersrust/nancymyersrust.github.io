@@ -1,0 +1,50 @@
+# Published essays and articles. To add a new one, copy a block below.
+#
+# genre           = short label shown next to the title (e.g. Essay, Fiction).
+# url             = link to the piece itself. Leave "" for print-only pieces.
+# publication_url = link to the magazine's site. Optional, but useful for
+#                   print-only pieces so the entry still points somewhere.
+#
+# Order here is the order they appear on the site (newest first is typical).
+
+- title: "On Writing Every Day (and Why You Don't Need to Do It)"
+  publication: "Whale Road Review"
+  date: "March 2025"
+  url: "https://www.whaleroadreview.com/rust/"
+  publication_url: "https://www.whaleroadreview.com"
+  genre: "Essay"
+
+- title: "That's Walt"
+  publication: "Radix Magazine"
+  date: "December 2024"
+  url: "https://www.radixmagazine.com/2024/12/22/thats-walt/"
+  publication_url: "https://www.radixmagazine.com"
+  genre: "Fiction"
+
+- title: "At Least You Knew It Was Coming"
+  publication: "Substack"
+  date: "August 2024"
+  url: "https://nancymyersrust.substack.com/p/distilled"
+  publication_url: "https://nancymyersrust.substack.com"
+  genre: "Essay"
+
+- title: "The Proust Effect"
+  publication: "Literary Mama"
+  date: "September 2021"
+  url: "https://literarymama.com/articles/departments/2021/09/the-proust-effect"
+  publication_url: "https://literarymama.com"
+  genre: "Essay"
+
+- title: "On Pain and Presence"
+  publication: "Relief Journal"
+  date: "Spring 2021, print edition"
+  url: ""
+  publication_url: "https://www.reliefjournal.com/"
+  genre: "Essay"
+
+- title: "An American Alphabet"
+  publication: "Pangyrus"
+  date: "January 2021"
+  url: "https://www.pangyrus.com/ideas/an-american-alphabet/"
+  publication_url: "https://www.pangyrus.com"
+  genre: "Essay"

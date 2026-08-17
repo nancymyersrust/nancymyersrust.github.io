@@ -1,0 +1,16 @@
+title: "Nancy Myers Rust"
+description: "Official website of Nancy Myers Rust — writer of essays and creative nonfiction."
+author: "Nancy Myers Rust"
+email: "nancymyersrust@gmail.com"
+substack_url: "https://nancymyersrust.substack.com"
+instagram_url: "https://www.instagram.com/nancymyersrust/"
+
+agent_name: "Elisa Moles"
+agent_agency: "Painted Fire Literary"
+agent_url: "https://www.paintedfireagency.com/"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# No plugins needed — everything here is supported by GitHub Pages' default build.

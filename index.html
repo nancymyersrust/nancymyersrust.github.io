@@ -1,0 +1,104 @@
+---
+layout: default
+---
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <img class="hero-portrait" src="{{ '/images/nancy-headshot.png' | relative_url }}" alt="{{ site.author }}">
+    <h1>{{ site.author }}</h1>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="#writing">Read my work</a>
+      <a class="btn btn-ghost" href="#contact">Get in touch</a>
+    </div>
+  </div>
+  <div class="rule"><span class="line"></span><span class="mark mint"></span><span class="mark clay"></span><span class="line"></span></div>
+</header>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="about-photo">
+      <img src="{{ '/images/nancy-photo.png' | relative_url }}" alt="{{ site.author }}, author photo">
+    </div>
+    <div class="about-body">
+      <span class="section-label">About</span>
+      <!-- EDIT HERE: bio paragraphs -->
+      <p>My husband likes to take up a new hobby for, oh, maybe a year or two, and then drop it like a hot cake. But for that one year, he's <em>all</em> in. One of my favorite phases was a few years ago when he started making bread. Baguettes and ciabatta and biscuits galore. Our house smelled so good. But as soon as I settled in, sold my bread machine, and started looking up homemade butter recipes, poof! He was done and on to the next.</p>
+      <p>Another hobby he tried was photography. For more than a year he was getting up at dawn for photo walks, researching all the hoity toity lenses, and talking about the rule of thirds. I really thought this one was here to stay. Nope. We moved to Seattle and he was on to the next (furniture building, btw, which ended almost before it began).</p>
+      <p>It dawned on me after our kids were born that the nice camera with all the fancy lenses was just collecting dust in the closet. Maybe I should give it a go? I could document all our adventures and keep the extended family in the loop. Yes! That was it! I would become an amazing photographer! How hard could it be? As an incentive for figuring out the camera, I created a blog. Had to put my breathtaking photos somewhere, right? I'd post the pictures and hey, maybe I'd write a little, too.</p>
+      <p>Well.</p>
+      <p>I did write, but I never really used the fancy camera. I mean, iPhones, right? But somewhere along the way, with the blog, I discovered I'm a writer. Who knew? I went back to school for an MFA in Creative Writing and graduated in 2020. For those who enjoy geeking out about this sort of thing: I'm an <a href="https://www.enneagraminstitute.com/type-5/">Enneagram 5</a> and an <a href="https://www.16personalities.com/intj-personality">INTJ</a>. When I'm not reading or writing, I'm probably throwing pottery on my front porch, or on a pickleball court. I play a <em>lot</em> of pickleball.</p>
+      <!-- EDIT HERE: the Jason story -->
+      <div class="coda">
+        <div class="coda-text">
+          <img src="{{ '/images/jason-hula-hoop.png' | relative_url }}" alt="Jason spinning a hula hoop at a farmer's market in Bremerton">
+          <p>A few summers ago we stumbled onto a tiny Farmer's Market in Bremerton. This is where I found Jason. You guessed it. He came home with that hula hoop. <em>On to the next!</em></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="writing-section" id="writing">
+  <div class="wrap">
+    <span class="section-label">Writing</span>
+    <h2 class="section-title">Published work.</h2>
+    <p class="writing-intro">Essays and the occasional short story — in print and online.</p>
+    <!-- EDIT HERE: essays live in _data/writing.yml -->
+    <ul class="writing-list">
+      {% for piece in site.data.writing %}
+      <li class="writing-item">
+        <div class="writing-title">
+          {% if piece.url != "" %}
+            <a href="{{ piece.url }}">{{ piece.title }}</a>
+          {% else %}
+            <span>{{ piece.title }}</span>
+          {% endif %}
+          {% if piece.genre %}<span class="genre">{{ piece.genre }}</span>{% endif %}
+        </div>
+        <div class="writing-meta">
+          {% if piece.publication_url != "" and piece.publication_url %}
+            <a class="pub" href="{{ piece.publication_url }}">{{ piece.publication }}</a>
+          {% else %}
+            <span class="pub">{{ piece.publication }}</span>
+          {% endif %}{% if piece.date != "" %}<span class="date">{{ piece.date }}</span>{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+    <p class="writing-more">…and elsewhere.</p>
+  </div>
+</section>
+
+<section class="newsletter" id="newsletter">
+  <div class="wrap">
+    <span class="section-label">Stay in the loop</span>
+    <h2 class="section-title">The newsletter.</h2>
+    <!-- EDIT HERE: newsletter description -->
+    <p>New essays, book recommendations, publishing news, and the occasional dispatch on what I'm working on — sent straight to your inbox.</p>
+    <a class="btn btn-primary" href="{{ site.substack_url }}/subscribe">Subscribe on Substack</a>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <span class="section-label">Get in touch</span>
+    <h2 class="section-title">Say hello.</h2>
+    <!-- EDIT HERE: contact intro line -->
+    <p class="contact-intro">I love hearing from readers — send me a book rec or drop me a line. I read every note.</p>
+    <!-- EDIT HERE: contact info lives in _config.yml (email, substack_url) -->
+    <div class="contact-grid">
+      <div class="contact-item">
+        <span class="label">Email</span>
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </div>
+      <div class="contact-item">
+        <span class="label">Representation</span>
+        <span class="value">{{ site.agent_name }}, <a href="{{ site.agent_url }}">{{ site.agent_agency }}</a></span>
+      </div>
+    </div>
+    <div class="socials">
+      <a href="{{ site.substack_url }}">Substack</a>
+      <a href="{{ site.instagram_url }}">Instagram</a>
+    </div>
+  </div>
+</section>
