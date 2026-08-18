@@ -1,6 +1,9 @@
 <nav>
   <div class="wrap">
-    <a class="nav-name" href="#top">{{ site.author }}</a>
+    <a class="nav-name" href="#top">
+      <img class="nav-logo" src="{{ '/images/logo.png' | relative_url }}" alt="">
+      <span>{{ site.author }}</span>
+    </a>
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#writing">Writing</a>
