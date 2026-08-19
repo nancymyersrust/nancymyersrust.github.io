@@ -266,7 +266,11 @@ section{ padding:100px 0; }
 .coda img{
   float:left;
   width:170px;
-  margin:4px 26px 12px 0;
+  height:170px;
+  object-fit:cover;
+  border-radius:50%;
+  shape-outside:circle(50%);
+  margin:4px 24px 12px 0;
   border:1px solid rgba(158,83,97,0.28);
 }
 .coda-text p:last-child em{ color:var(--rose-text); font-style:italic; }
@@ -430,7 +434,7 @@ footer{
     grid-template-columns:1fr;
   }
   .about-photo{ max-width:320px; position:static; }
-  .coda img{ width:130px; margin:2px 18px 8px 0; }
+  .coda img{ width:130px; height:130px; margin:2px 18px 8px 0; }
   .hero-portrait{ width:150px; height:150px; margin-bottom:26px; }
   .writing-item{ gap:8px; }
   .writing-meta{ text-align:right; align-items:flex-end; }
