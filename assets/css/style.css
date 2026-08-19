@@ -442,3 +442,18 @@ footer{
   .nav-links{ display:flex; gap:18px; }
   .wrap{ padding:0 24px; }
 }
+
+/* phones — show the logo mark alone so the nav links have room */
+@media (max-width: 620px){
+  nav .wrap{ padding-top:16px; padding-bottom:16px; }
+  .nav-name span{ display:none; }
+  .nav-logo{ width:28px; height:28px; }
+  .nav-links{ gap:16px; }
+  .nav-links a{ font-size:0.72rem; letter-spacing:0.05em; }
+}
+
+@media (max-width: 400px){
+  .nav-links{ gap:12px; }
+  .nav-links a{ font-size:0.68rem; letter-spacing:0.03em; }
+  .nav-logo{ width:26px; height:26px; }
+}
